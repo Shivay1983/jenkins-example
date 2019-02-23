@@ -64,8 +64,8 @@
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
+            <id>releases</id>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
         </repository>
     </distributionManagement>
 
