@@ -55,18 +55,17 @@
 
     </dependencies>
 
-    <repositories>
+      <distributionManagement>
         <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
+                <id>releases</id>
+                <name>Releases</name>
+                <url>http://localhost:8081/nexus/content/repositories/releases/<url/>
         </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>snapshots</id>
-            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
-        </repository>
-    </distributionManagement>
+        <snapshotRepository>
+                <id>snapshots</id>
+                <name>Snapshots</name>
+                <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+</distributionManagement>
 
 </project>
