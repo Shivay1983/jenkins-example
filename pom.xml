@@ -6,7 +6,7 @@
 
     <groupId>com.techprimers.testing</groupId>
     <artifactId>jenkins-example</artifactId>
-    <version>1.0</version>
+    <version>1.0.0-snapshot</version>
 
 
     <properties>
@@ -60,7 +60,10 @@
 
     </dependencies>
 <distributionManagement>
-  
+  <Snapshotsrepository>
+            <id>snapshots</id>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </Snapshotsrepository>
         <repository>
             <id>releases</id>
             <url>http://localhost:8081/nexus/content/repositories/releases/</url>
